@@ -27,7 +27,7 @@ enum
     NUM_ATTRIBUTES
 };
 
-GLfloat gCubeVertexData[216] = 
+/*GLfloat gCubeVertexData[216] =
 {
     // Data layout for each line below is:
     // positionX, positionY, positionZ,     normalX, normalY, normalZ,
@@ -72,7 +72,7 @@ GLfloat gCubeVertexData[216] =
     0.5f, 0.5f, -0.5f,         0.0f, 0.0f, -1.0f,
     -0.5f, -0.5f, -0.5f,       0.0f, 0.0f, -1.0f,
     -0.5f, 0.5f, -0.5f,        0.0f, 0.0f, -1.0f
-};
+};*/
 
 @interface ViewController () {
     GLuint _program;
@@ -112,7 +112,12 @@ GLfloat gCubeVertexData[216] =
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
-    [self setupGL];
+    UIButton *testButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [testButton setTitle:@"TEST" forState:UIControlStateNormal];
+    [testButton setFrame:CGRectMake(0.f, 0.f, 100.f, 40.f)];
+    [self.view addSubview:testButton];
+    
+    //[self setupGL];
 }
 
 - (void)dealloc
@@ -159,7 +164,7 @@ GLfloat gCubeVertexData[216] =
     
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
+    //glBufferData(GL_ARRAY_BUFFER, sizeof(gCubeVertexData), gCubeVertexData, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
@@ -225,7 +230,7 @@ GLfloat gCubeVertexData[216] =
     // Render the object with GLKit
     [self.effect prepareToDraw];
     
-    glDrawArrays(GL_TRIANGLES, 0, 36);
+   // glDrawArrays(GL_TRIANGLES, 0, 36);
     
     // Render the object again with ES2
     glUseProgram(_program);
@@ -233,7 +238,7 @@ GLfloat gCubeVertexData[216] =
     glUniformMatrix4fv(uniforms[UNIFORM_MODELVIEWPROJECTION_MATRIX], 1, 0, _modelViewProjectionMatrix.m);
     glUniformMatrix3fv(uniforms[UNIFORM_NORMAL_MATRIX], 1, 0, _normalMatrix.m);
     
-    glDrawArrays(GL_TRIANGLES, 0, 36);
+   // glDrawArrays(GL_TRIANGLES, 0, 36);
 }
 
 #pragma mark -  OpenGL ES 2 shader compilation

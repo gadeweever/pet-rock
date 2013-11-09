@@ -7,12 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"yzz0lCZ6QANxgAHkKvkegd95e6c0S8CcmPN37MPv"
+                  clientKey:@"8hbpv3EEIQ7arCLf4DdiKMc7ycTaLejgV2RD3GOf"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     // Override point for customization after application launch.
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor redColor];
+    self.window.rootViewController = [[ViewController alloc] init];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

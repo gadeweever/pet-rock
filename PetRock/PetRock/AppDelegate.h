@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 CodeRockers. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
