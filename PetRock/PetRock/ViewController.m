@@ -25,6 +25,7 @@ enum
     ATTRIB_VERTEX,
     ATTRIB_NORMAL,
     NUM_ATTRIBUTES
+    //anoter comment
 };
 
 /*GLfloat gCubeVertexData[216] =
