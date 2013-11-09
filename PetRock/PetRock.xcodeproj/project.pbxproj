@@ -15,8 +15,6 @@
 		068E0572182EC60900CE9914 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068E0570182EC60900CE9914 /* InfoPlist.strings */; };
 		068E0574182EC60900CE9914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E0573182EC60900CE9914 /* main.m */; };
 		068E0578182EC60900CE9914 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E0577182EC60900CE9914 /* AppDelegate.m */; };
-		068E057B182EC60900CE9914 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068E0579182EC60900CE9914 /* Main_iPhone.storyboard */; };
-		068E057E182EC60900CE9914 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068E057C182EC60900CE9914 /* Main_iPad.storyboard */; };
 		068E0580182EC60900CE9914 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 068E057F182EC60900CE9914 /* Shader.fsh */; };
 		068E0582182EC60900CE9914 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 068E0581182EC60900CE9914 /* Shader.vsh */; };
 		068E0585182EC60900CE9914 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E0584182EC60900CE9914 /* ViewController.m */; };
@@ -26,6 +24,16 @@
 		068E0590182EC60A00CE9914 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E0567182EC60900CE9914 /* UIKit.framework */; };
 		068E0598182EC60A00CE9914 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 068E0596182EC60A00CE9914 /* InfoPlist.strings */; };
 		068E059A182EC60A00CE9914 /* PetRockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 068E0599182EC60A00CE9914 /* PetRockTests.m */; };
+		068E05A6182ECD5F00CE9914 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05A5182ECD5F00CE9914 /* Parse.framework */; };
+		068E05A8182ECDE800CE9914 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05A7182ECDE800CE9914 /* AudioToolbox.framework */; };
+		068E05AA182ECDF100CE9914 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05A9182ECDF100CE9914 /* CFNetwork.framework */; };
+		068E05AC182ECE0700CE9914 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05AB182ECE0700CE9914 /* CoreLocation.framework */; };
+		068E05AE182ECE3E00CE9914 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05AD182ECE3E00CE9914 /* libz.1.1.3.dylib */; };
+		068E05B0182ECE4800CE9914 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05AF182ECE4800CE9914 /* MobileCoreServices.framework */; };
+		068E05B2182ECE5800CE9914 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05B1182ECE5800CE9914 /* QuartzCore.framework */; };
+		068E05B4182ECE6600CE9914 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05B3182ECE6600CE9914 /* Security.framework */; };
+		068E05B6182ECE7600CE9914 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05B5182ECE7600CE9914 /* StoreKit.framework */; };
+		068E05B8182ECE8500CE9914 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E05B7182ECE8500CE9914 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +59,6 @@
 		068E0575182EC60900CE9914 /* PetRock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PetRock-Prefix.pch"; sourceTree = "<group>"; };
 		068E0576182EC60900CE9914 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		068E0577182EC60900CE9914 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		068E057A182EC60900CE9914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		068E057D182EC60900CE9914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		068E057F182EC60900CE9914 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		068E0581182EC60900CE9914 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		068E0583182EC60900CE9914 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -63,6 +69,16 @@
 		068E0595182EC60A00CE9914 /* PetRockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PetRockTests-Info.plist"; sourceTree = "<group>"; };
 		068E0597182EC60A00CE9914 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		068E0599182EC60A00CE9914 /* PetRockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetRockTests.m; sourceTree = "<group>"; };
+		068E05A5182ECD5F00CE9914 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		068E05A7182ECDE800CE9914 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		068E05A9182ECDF100CE9914 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		068E05AB182ECE0700CE9914 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		068E05AD182ECE3E00CE9914 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		068E05AF182ECE4800CE9914 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		068E05B1182ECE5800CE9914 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		068E05B3182ECE6600CE9914 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		068E05B5182ECE7600CE9914 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		068E05B7182ECE8500CE9914 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +86,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				068E056C182EC60900CE9914 /* OpenGLES.framework in Frameworks */,
+				068E05B8182ECE8500CE9914 /* SystemConfiguration.framework in Frameworks */,
+				068E05B6182ECE7600CE9914 /* StoreKit.framework in Frameworks */,
+				068E05B4182ECE6600CE9914 /* Security.framework in Frameworks */,
+				068E05B2182ECE5800CE9914 /* QuartzCore.framework in Frameworks */,
+				068E05B0182ECE4800CE9914 /* MobileCoreServices.framework in Frameworks */,
+				068E05AE182ECE3E00CE9914 /* libz.1.1.3.dylib in Frameworks */,
+				068E05AC182ECE0700CE9914 /* CoreLocation.framework in Frameworks */,
 				068E0566182EC60900CE9914 /* CoreGraphics.framework in Frameworks */,
+				068E05AA182ECDF100CE9914 /* CFNetwork.framework in Frameworks */,
+				068E05A8182ECDE800CE9914 /* AudioToolbox.framework in Frameworks */,
+				068E056C182EC60900CE9914 /* OpenGLES.framework in Frameworks */,
 				068E0568182EC60900CE9914 /* UIKit.framework in Frameworks */,
 				068E056A182EC60900CE9914 /* GLKit.framework in Frameworks */,
+				068E05A6182ECD5F00CE9914 /* Parse.framework in Frameworks */,
 				068E0564182EC60900CE9914 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +139,16 @@
 		068E0562182EC60900CE9914 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				068E05B7182ECE8500CE9914 /* SystemConfiguration.framework */,
+				068E05B5182ECE7600CE9914 /* StoreKit.framework */,
+				068E05B3182ECE6600CE9914 /* Security.framework */,
+				068E05B1182ECE5800CE9914 /* QuartzCore.framework */,
+				068E05AF182ECE4800CE9914 /* MobileCoreServices.framework */,
+				068E05AD182ECE3E00CE9914 /* libz.1.1.3.dylib */,
+				068E05AB182ECE0700CE9914 /* CoreLocation.framework */,
+				068E05A9182ECDF100CE9914 /* CFNetwork.framework */,
+				068E05A7182ECDE800CE9914 /* AudioToolbox.framework */,
+				068E05A5182ECD5F00CE9914 /* Parse.framework */,
 				068E0563182EC60900CE9914 /* Foundation.framework */,
 				068E0565182EC60900CE9914 /* CoreGraphics.framework */,
 				068E0567182EC60900CE9914 /* UIKit.framework */,
@@ -128,8 +164,6 @@
 			children = (
 				068E0576182EC60900CE9914 /* AppDelegate.h */,
 				068E0577182EC60900CE9914 /* AppDelegate.m */,
-				068E0579182EC60900CE9914 /* Main_iPhone.storyboard */,
-				068E057C182EC60900CE9914 /* Main_iPad.storyboard */,
 				068E057F182EC60900CE9914 /* Shader.fsh */,
 				068E0581182EC60900CE9914 /* Shader.vsh */,
 				068E0583182EC60900CE9914 /* ViewController.h */,
@@ -246,8 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				068E0580182EC60900CE9914 /* Shader.fsh in Resources */,
-				068E057E182EC60900CE9914 /* Main_iPad.storyboard in Resources */,
-				068E057B182EC60900CE9914 /* Main_iPhone.storyboard in Resources */,
 				068E0587182EC60900CE9914 /* Images.xcassets in Resources */,
 				068E0572182EC60900CE9914 /* InfoPlist.strings in Resources */,
 				068E0582182EC60900CE9914 /* Shader.vsh in Resources */,
@@ -300,22 +332,6 @@
 				068E0571182EC60900CE9914 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		068E0579182EC60900CE9914 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				068E057A182EC60900CE9914 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		068E057C182EC60900CE9914 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				068E057D182EC60900CE9914 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		068E0596182EC60A00CE9914 /* InfoPlist.strings */ = {
@@ -408,6 +424,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/goodman.josh/Desktop,
+					"/Users/goodman.josh/Dropbox/CodeDay/Git/pet-rock/PetRock",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PetRock/PetRock-Prefix.pch";
 				INFOPLIST_FILE = "PetRock/PetRock-Info.plist";
@@ -421,6 +442,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/goodman.josh/Desktop,
+					"/Users/goodman.josh/Dropbox/CodeDay/Git/pet-rock/PetRock",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PetRock/PetRock-Prefix.pch";
 				INFOPLIST_FILE = "PetRock/PetRock-Info.plist";
